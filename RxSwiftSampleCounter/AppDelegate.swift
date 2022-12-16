@@ -7,13 +7,27 @@
 
 import UIKit
 
-@main
+//こっちはいじらなくて良さそう
+//@main 削除する
+//以下追加
+@UIApplicationMain
+//以上
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    //以下storyboard使わないための記述
+    var window: UIWindow?
+    //以上
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //以下storyboard使わないための記述
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let navigationController = UINavigationController(rootViewController: ViewController())
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+        //以上
+        
         return true
     }
 

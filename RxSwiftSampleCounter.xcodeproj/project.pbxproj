@@ -10,9 +10,10 @@
 		2333A81B294C2ECE00F4BE4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333A81A294C2ECE00F4BE4E /* AppDelegate.swift */; };
 		2333A81D294C2ECE00F4BE4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333A81C294C2ECE00F4BE4E /* SceneDelegate.swift */; };
 		2333A81F294C2ECE00F4BE4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333A81E294C2ECE00F4BE4E /* ViewController.swift */; };
-		2333A822294C2ECE00F4BE4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2333A820294C2ECE00F4BE4E /* Main.storyboard */; };
 		2333A824294C2ECF00F4BE4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2333A823294C2ECF00F4BE4E /* Assets.xcassets */; };
 		2333A827294C2ECF00F4BE4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2333A825294C2ECF00F4BE4E /* LaunchScreen.storyboard */; };
+		2333A82F294C32FC00F4BE4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2333A82E294C32FC00F4BE4E /* ViewController.xib */; };
+		80AC62EE46E405F4F0BBFD13 /* Pods_RxSwiftSampleCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3595F9D3A57E5936CB021510 /* Pods_RxSwiftSampleCounter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,13 @@
 		2333A81A294C2ECE00F4BE4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2333A81C294C2ECE00F4BE4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2333A81E294C2ECE00F4BE4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2333A821294C2ECE00F4BE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2333A823294C2ECF00F4BE4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2333A826294C2ECF00F4BE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2333A828294C2ECF00F4BE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2333A82E294C32FC00F4BE4E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		3595F9D3A57E5936CB021510 /* Pods_RxSwiftSampleCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftSampleCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3707194AFBA9FD9BED6494CB /* Pods-RxSwiftSampleCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftSampleCounter.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftSampleCounter/Pods-RxSwiftSampleCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		C543CDA2A6DF5C18CAD72E0B /* Pods-RxSwiftSampleCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftSampleCounter.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftSampleCounter/Pods-RxSwiftSampleCounter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AC62EE46E405F4F0BBFD13 /* Pods_RxSwiftSampleCounter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22AF9B695713B0A85BD1052A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3595F9D3A57E5936CB021510 /* Pods_RxSwiftSampleCounter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2333A80E294C2ECE00F4BE4E = {
 			isa = PBXGroup;
 			children = (
 				2333A819294C2ECE00F4BE4E /* RxSwiftSampleCounter */,
 				2333A818294C2ECE00F4BE4E /* Products */,
+				2E23FD0DD62ED60618445327 /* Pods */,
+				22AF9B695713B0A85BD1052A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,21 @@
 				2333A81A294C2ECE00F4BE4E /* AppDelegate.swift */,
 				2333A81C294C2ECE00F4BE4E /* SceneDelegate.swift */,
 				2333A81E294C2ECE00F4BE4E /* ViewController.swift */,
-				2333A820294C2ECE00F4BE4E /* Main.storyboard */,
 				2333A823294C2ECF00F4BE4E /* Assets.xcassets */,
 				2333A825294C2ECF00F4BE4E /* LaunchScreen.storyboard */,
 				2333A828294C2ECF00F4BE4E /* Info.plist */,
+				2333A82E294C32FC00F4BE4E /* ViewController.xib */,
 			);
 			path = RxSwiftSampleCounter;
+			sourceTree = "<group>";
+		};
+		2E23FD0DD62ED60618445327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3707194AFBA9FD9BED6494CB /* Pods-RxSwiftSampleCounter.debug.xcconfig */,
+				C543CDA2A6DF5C18CAD72E0B /* Pods-RxSwiftSampleCounter.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2333A82B294C2ECF00F4BE4E /* Build configuration list for PBXNativeTarget "RxSwiftSampleCounter" */;
 			buildPhases = (
+				4D0A0A91E6480F2E96E8D474 /* [CP] Check Pods Manifest.lock */,
 				2333A813294C2ECE00F4BE4E /* Sources */,
 				2333A814294C2ECE00F4BE4E /* Frameworks */,
 				2333A815294C2ECE00F4BE4E /* Resources */,
+				0F0E0F59F76D697B3AA5B24F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +152,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				2333A827294C2ECF00F4BE4E /* LaunchScreen.storyboard in Resources */,
+				2333A82F294C32FC00F4BE4E /* ViewController.xib in Resources */,
 				2333A824294C2ECF00F4BE4E /* Assets.xcassets in Resources */,
-				2333A822294C2ECE00F4BE4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F0E0F59F76D697B3AA5B24F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftSampleCounter/Pods-RxSwiftSampleCounter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftSampleCounter/Pods-RxSwiftSampleCounter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftSampleCounter/Pods-RxSwiftSampleCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D0A0A91E6480F2E96E8D474 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftSampleCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2333A813294C2ECE00F4BE4E /* Sources */ = {
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2333A820294C2ECE00F4BE4E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2333A821294C2ECE00F4BE4E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2333A825294C2ECF00F4BE4E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +342,7 @@
 		};
 		2333A82C294C2ECF00F4BE4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3707194AFBA9FD9BED6494CB /* Pods-RxSwiftSampleCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +353,8 @@
 				INFOPLIST_FILE = RxSwiftSampleCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +372,7 @@
 		};
 		2333A82D294C2ECF00F4BE4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C543CDA2A6DF5C18CAD72E0B /* Pods-RxSwiftSampleCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +383,8 @@
 				INFOPLIST_FILE = RxSwiftSampleCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
